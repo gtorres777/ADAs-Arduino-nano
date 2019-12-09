@@ -147,12 +147,11 @@ void servo_detach(void)
 void loop()
 {
   if (car != ""){
-    
   }
   
   if (car=="a"){
     car = "";
-    step_forward(5);
+    step_forward(2);
     delay(1000);
     Serial.println(car);
     car="";f
@@ -166,19 +165,19 @@ void loop()
   }
 
   if (car=="r"){
-    step_back(5);
+    step_back(2);
     delay(1000);
     car = "";
   }
 
   if (car=="d"){
-    turn_right(5);
+    turn_right(2);
     delay(1000);
     car = "";
   }
 
   if (car=="i"){
-    turn_left(5);
+    turn_left(2);
     delay(1000);
     car = "";
   }
